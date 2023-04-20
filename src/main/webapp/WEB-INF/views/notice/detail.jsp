@@ -43,8 +43,8 @@
 </script>
 </head>
 <body>
-	<h1>${notice.notice_no}번 공지사항</h1>
 	<div id="detail_screen">
+	<h1>${notice.notice_no}번 공지사항</h1>
 		<div>구분 : 
 			<c:if test="${notice.gubun eq 1}">긴급</c:if>
 			<c:if test="${notice.gubun eq 2}">일반</c:if>
@@ -89,7 +89,7 @@
 			</div>
 			<div>
 				<input type="hidden" name="notice_no" value="${notice.notice_no}">
-				<button>수정완료</button>
+				<button>편집완료</button>
 				<input type="button" value="목록" onclick="fnList()">
 			</div>			
 		</form>
